@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Elementor selectors */
+      body {
+        background-color: #333;
+      }
+      /* . is for classes */
+      .primary-heading {
+        color: blue;
+      }
+      /* # is for id*/
+      #welcome {
+        background-color: #f4f4f4;
+      }
+      /* Multiple Selector*/
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      #welcome p {
+        font-size: 20px;
+      }
+
+      #about {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut commodi
+        quia obcaecati autem exercitationem tempore laudantium hic magnam!
+        Possimus, iusto amet ea quidem modi numquam qui enim consequuntur earum
+        obcaecati!
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+        provident eligendi adipisci ea atque obcaecati sequi sed praesentium
+        animi laboriosam temporibus placeat veniam iste, possimus quam error
+        cumque rerum. Eius.
+      </p>
+    </div>
+  </body>
+</html>
