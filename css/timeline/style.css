@@ -14,7 +14,7 @@ body {
   font: normal 1rem/1.5 "Arial", sans-serif;
   color: #fff;
   background: var(--primary-color);
-  overflow: hidden;
+  overflow: auto;
   padding-bottom: 50px;
 }
 
@@ -31,4 +31,41 @@ body {
 
 h1 {
   font-size: 2.3rem;
+}
+
+#timeline ul {
+  background: var(--primary-color);
+  padding: 50px 0;
+}
+
+#timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: white;
+}
+
+/* Boxes */
+
+#timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 1rem;
+  background: var(--secondary-color);
+  transition: all 0.5sec ease-in-out;
+}
+
+/* Right Side */
+
+#timeline ul li:nth-child(odd) div {
+  left: 40px;
+}
+
+/* Left Side */
+
+#timeline ul li:nth-child(even) div {
+  left: -434px;
 }
